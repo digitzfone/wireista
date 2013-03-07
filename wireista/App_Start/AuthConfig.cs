@@ -22,9 +22,9 @@ namespace wireista
             //    consumerKey: "",
             //    consumerSecret: "");
 
-            //OAuthWebSecurity.RegisterFacebookClient(
-            //    appId: "",
-            //    appSecret: "");
+            OAuthWebSecurity.RegisterFacebookClient(
+                appId: "273675362764697",
+                appSecret: "fbcce6622ce80b6edb30df9d926dbf34");
 
             //OAuthWebSecurity.RegisterGoogleClient();
         }
