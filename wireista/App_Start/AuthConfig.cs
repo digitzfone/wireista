@@ -23,10 +23,12 @@ namespace wireista
             //    consumerSecret: "");
 
             OAuthWebSecurity.RegisterFacebookClient(
-                appId: "273675362764697",
-                appSecret: "fbcce6622ce80b6edb30df9d926dbf34");
+                appId: System.Configuration.ConfigurationManager.AppSettings["FacebookAppId"],
+                appSecret: System.Configuration.ConfigurationManager.AppSettings["FacebookAppSecret"]);
+                //appId: "151733318319423",
+                //appSecret: "e0fd1eafb98a9b5d8c622e1303fc76be");
 
-            //OAuthWebSecurity.RegisterGoogleClient();
+            OAuthWebSecurity.RegisterGoogleClient();
         }
     }
 }
